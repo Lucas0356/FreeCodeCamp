@@ -1,0 +1,162 @@
+/* ************************************************** */
+/* import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+
+/* ************************************************** */
+/* generals styles */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 18px;
+}
+
+/* ************************************************** */
+/* body styles */
+
+body{
+    font-family: Poppins, sans-serif;
+    background-color: #A9A9A9;
+    padding: 1rem;
+}
+
+/* ************************************************** */
+/* header styles */
+
+header{
+    color: #333333;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+h1{
+    margin-bottom: 0.6rem;
+}
+
+/* ************************************************** */
+/* main styles */
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ************************************************** */
+/* section description styles */
+
+.presentation{
+    background-color:  #E0E0E0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 60%;
+}
+
+.presentation img{
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 0.6rem;
+}
+
+.presentation p{
+    width: 100%;
+    max-width: 850px;
+    text-align: center;
+}
+
+/* ************************************************** */
+/* tribute info styles */
+
+.tribute-info{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    background-color:  #E0E0E0;
+}
+
+.tribute-info h2{
+    margin: 2rem 0 2rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* ************************************************** */
+/* time-line styles */
+
+.timeline{
+    margin: 0 auto;
+    width: 50%;
+}
+
+.timeline li{
+    margin-bottom: 1rem;
+}
+
+.timeline li span{
+    text-align: left;
+}
+
+/* ************************************************** */
+/* citation styles */
+
+.citation{
+    text-align: center;
+    width: 60%;
+    font-style: italic;
+    margin: 1rem 0;
+}
+
+/* ************************************************** */
+/* more-info styles */
+
+.more-info{
+    width: 90%;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.more-info p a{
+    color: #333333;
+}
+
+
+
+/* ************************************************** */
+/* text bold */
+
+.bold{
+    font-weight: bold;
+}
+
+/* ************************************************** */
+/* media queries */
+
+@media (max-width:768px){
+    html{
+        font-size: 16px;
+    }
+    .presentation{
+        width: 100%;
+    }
+    .tribute-info{
+        width: 100%;
+    }
+}
