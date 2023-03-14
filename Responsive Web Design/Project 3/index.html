@@ -9,132 +9,156 @@
 <body>
     <nav id="navbar">
         <header>CSS Documentation</header>
+        <div class="divider"></div>
         <ul>
             <li>
                 <a class="nav-link" href="#introduction">introduction</a>
             </li>
+            <div class="divider"></div>
             <li>
                 <a class="nav-link" href="#selectors">selectors</a>
             </li>
+            <div class="divider"></div>
             <li>
-                <a class="nav-link" href="#css_properties">Css Properties</a>
+                <a class="nav-link" href="#css_properties"><span class="uppercase">css</span> properties</a>
             </li>
+            <div class="divider"></div>
             <li>
                 <a class="nav-link" href="#page_layout">page layout</a>
             </li>
+            <div class="divider"></div>
             <li>
                 <a class="nav-link" href="#responsive_design">responsive design</a>
             </li>
+            <div class="divider"></div>
             <li>
                 <a class="nav-link" href="#reference">reference</a>
             </li>
+            <div class="divider"></div>
         </ul>
     </nav>
     <main id="main-doc">
         <section class="main-section" id="introduction">
-            <header>introduction</header>
-            <p>
-                CSS (Cascading Style Sheets) is a styling language used to describe how HTML elements 
-                should be displayed on a webpage. It allows developers to separate content and structure 
-                from presentation, making it possible to change a website's appearance without altering 
-                its underlying HTML code.
-            </p>
-            <p>
-                CSS is based on a box model, where each HTML element is treated as a rectangular box that 
-                can be styled using different CSS properties, such as font size, color, background color, 
-                margin, padding, and more. Selectors are used to target specific HTML elements and apply 
-                styles to them.
-            </p>
-            <p>
-                In summary, CSS is a crucial tool for creating modern and visually appealing websites. By 
-                using CSS, developers can control the presentation of HTML elements, allowing them to create 
-                customized and unique designs for their websites.
-            </p>
+            <header class="bold">introduction</header>
+            <div class="info">
+                <p>
+                    CSS (Cascading Style Sheets) is a styling language used to describe how HTML elements 
+                    should be displayed on a webpage. It allows developers to separate content and structure 
+                    from presentation, making it possible to change a website's appearance without altering 
+                    its underlying HTML code.
+                </p>
+                <p>
+                    CSS is based on a box model, where each HTML element is treated as a rectangular box that 
+                    can be styled using different CSS properties, such as font size, color, background color, 
+                    margin, padding, and more. Selectors are used to target specific HTML elements and apply 
+                    styles to them.
+                </p>
+                <p>
+                    In summary, CSS is a crucial tool for creating modern and visually appealing websites. By 
+                    using CSS, developers can control the presentation of HTML elements, allowing them to create 
+                    customized and unique designs for their websites.
+                </p>
+            </div>
         </section>
+
         <section class="main-section" id="selectors">
-            <header>selectors</header>
-            <p>
-                Selectors are a key component of CSS that allow you to target specific HTML elements and apply 
-                styles to them. CSS provides several different types of selectors, including element selectors, 
-                class selectors, ID selectors, attribute selectors, and pseudo-classes.
-            </p>
-            <p>
-                Element selectors target elements based on their HTML tag name, such as "p" for paragraphs or "h1" 
-                for top-level headings. Class selectors target elements based on their HTML class attribute, which 
-                can be shared among multiple elements. ID selectors target elements based on their HTML ID attribute, 
-                which should be unique to a single element on the page.
-            </p>
-            <code>&lt;h1&gt;Mi título&lt;/h1&gt;</code>
+            <header class="bold">selectors</header>
+            <div class="info">
+                <p>
+                    Selectors are a key component of CSS that allow you to target specific HTML elements and apply 
+                    styles to them. CSS provides several different types of selectors, including element selectors, 
+                    class selectors, ID selectors, attribute selectors, and pseudo-classes.
+                </p>
+                <p>
+                    Element selectors target elements based on their HTML tag name, such as "p" for paragraphs or "h1" 
+                    for top-level headings. Class selectors target elements based on their HTML class attribute, which 
+                    can be shared among multiple elements. ID selectors target elements based on their HTML ID attribute, 
+                    which should be unique to a single element on the page.
+                </p>
+                <code>&lt;h1&gt;This is just a test&lt;/h1&gt;</code>
+            </div>
         </section>
+
         <section class="main-section" id="css_properties">
-            <header>css properties</header>
-            <p>
-                CSS properties are attributes that developers use to style and format HTML elements on a webpage. 
-                There are many CSS properties available, ranging from basic formatting properties such as color 
-                and font-size to more advanced properties such as animation and transform. CSS properties can be 
-                applied to HTML elements using selectors, and their values can be adjusted to achieve the desired 
-                style and formatting.
-            </p>
-            <p>
-                Learning about CSS properties is essential for web developers who want to create visually appealing 
-                and functional webpages. By using CSS properties effectively, developers can make their webpages 
-                more attractive and user-friendly. Resources such as the MDN "CSS Properties" page provide a 
-                comprehensive reference to all CSS properties available, allowing developers to quickly and easily 
-                find the information they need to create stunning webpages.
-            </p>
+            <header class="bold"><span class="uppercase">css</span> properties</header>
+            <div class="info">
+                <p>
+                    CSS properties are attributes that developers use to style and format HTML elements on a webpage. 
+                    There are many CSS properties available, ranging from basic formatting properties such as color 
+                    and font-size to more advanced properties such as animation and transform. CSS properties can be 
+                    applied to HTML elements using selectors, and their values can be adjusted to achieve the desired 
+                    style and formatting.
+                </p>
+                <p>
+                    Learning about CSS properties is essential for web developers who want to create visually appealing 
+                    and functional webpages. By using CSS properties effectively, developers can make their webpages 
+                    more attractive and user-friendly. Resources such as the MDN "CSS Properties" page provide a 
+                    comprehensive reference to all CSS properties available, allowing developers to quickly and easily 
+                    find the information they need to create stunning webpages.
+                </p>
+            </div>
         </section>
+
         <section class="main-section" id="page_layout">
-            <header>page layout</header>
-            <p>
-                Page layout refers to the way that content is arranged on a webpage. Effective page layout is important 
-                for creating a visually appealing and user-friendly website. There are many techniques that developers 
-                can use to create effective page layouts, including using grids, white space, and color schemes to 
-                create a cohesive and balanced design.
-            </p>
-            <p>
-                Developers can use CSS properties such as display, position, and float to control the placement of 
-                elements on a webpage. Responsive design techniques, such as using media queries, can also be used 
-                to create layouts that adapt to different screen sizes and devices. By focusing on creating a 
-                well-designed and functional page layout, developers can improve the overall user experience of 
-                their website.
-            </p>
+            <header class="bold">page layout</header>
+            <div class="info">
+                <p>
+                    Page layout refers to the way that content is arranged on a webpage. Effective page layout is important 
+                    for creating a visually appealing and user-friendly website. There are many techniques that developers 
+                    can use to create effective page layouts, including using grids, white space, and color schemes to 
+                    create a cohesive and balanced design.
+                </p>
+                <p>
+                    Developers can use CSS properties such as display, position, and float to control the placement of 
+                    elements on a webpage. Responsive design techniques, such as using media queries, can also be used 
+                    to create layouts that adapt to different screen sizes and devices. By focusing on creating a 
+                    well-designed and functional page layout, developers can improve the overall user experience of 
+                    their website.
+                </p>
+            </div>
         </section>
+
         <section class="main-section" id="responsive_design">
-            <header>responsive design</header>
-            <p>
-                Responsive design is a technique used by web developers to create websites that adapt to different 
-                screen sizes and devices. With the increasing use of smartphones and tablets, it has become 
-                increasingly important for websites to be optimized for mobile devices. Responsive design achieves 
-                this by using CSS media queries to adjust the layout, typography, and content of a webpage based 
-                on the screen size of the device being used.
-            </p>
-            <p>
-                Responsive design has many benefits, including improving the user experience, increasing website 
-                traffic and engagement, and improving search engine optimization (SEO). By using responsive design 
-                techniques, developers can ensure that their websites are accessible and user-friendly on all 
-                devices, leading to increased user satisfaction and improved website performance.
-            </p>
+            <header class="bold">responsive design</header>
+            <div class="info">
+                <p>
+                    Responsive design is a technique used by web developers to create websites that adapt to different 
+                    screen sizes and devices. With the increasing use of smartphones and tablets, it has become 
+                    increasingly important for websites to be optimized for mobile devices. Responsive design achieves 
+                    this by using CSS media queries to adjust the layout, typography, and content of a webpage based 
+                    on the screen size of the device being used.
+                </p>
+                <p>
+                    Responsive design has many benefits, including improving the user experience, increasing website 
+                    traffic and engagement, and improving search engine optimization (SEO). By using responsive design 
+                    techniques, developers can ensure that their websites are accessible and user-friendly on all 
+                    devices, leading to increased user satisfaction and improved website performance.
+                </p>
+            </div>
         </section>
+
         <section class="main-section" id="reference">
-            <header>reference</header>
-            <p>All the documentation in this page is taken from :</p>
-            <ul>
-                <li>
-                    <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS" target="_blank">
-                        MDN
-                    </a>
-                </li>
-                <li>
-                    <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS" target="_blank">
-                        W3S
-                    </a>
-                </li>
-                <li>
-                    <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS" target="_blank">
-                        ChatGPT
-                    </a>
-                </li>
-            </ul>
+            <header class="bold">reference</header>
+            <div class="info">
+                <p>All the documentation in this page is taken from :</p>
+                <ul>
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS" target="_blank">
+                            MDN
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS" target="_blank">
+                            W3S
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS" target="_blank">
+                            ChatGPT
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
 
