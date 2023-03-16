@@ -108,6 +108,21 @@ p{
     font-weight: 500;
 }
 
+.info ul{
+    margin-left: 2rem;
+    list-style: "-";
+}
+
+.info ul li a{
+    color: #3d464f;
+    text-decoration: none;
+    margin: 1rem;
+}
+
+.info ul li a:hover{
+    color: #245ca8;
+}
+
 /* ************************************************** */
 /* code styles */
 
@@ -120,15 +135,6 @@ code{
     margin: 0.5rem;
     border-radius: 5px;
 }
-
-/* ************************************************** */
-/* divider styler */
-
-/* .divider{
-    width: 100%;
-    height: 2px;
-    background-color: #000000;
-} */
 
 /* ************************************************** */
 /* bold text */
