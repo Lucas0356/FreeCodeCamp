@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <title>CSS Documentation</title>
 </head>
 <body>
     <nav id="navbar">
         <header>CSS Documentation</header>
+        <button class="button-menu"> <!-- Button for the movile menu -->
+            <span class="material-symbols-outlined"> menu </span>
+        </button>
         <ul class="menu">
             <li>
                 <a id="firts-link" class="nav-link" href="#introduction">introduction</a>
@@ -159,6 +163,28 @@
             </div>
         </section>
     </main>
+
+    <script>
+        // JavaScript
+        const menuButton = document.querySelector('.button-menu');
+        const menuLinks = document.querySelectorAll('.nav-link');
+
+        // Add an event to the button element to trigger when clicked:
+        menuButton.addEventListener('click', function () {
+            // Select an element by ID with getElementById:
+            document.querySelector('.menu').classList.toggle('active');
+        });
+
+        // Add an event to each "a" element in the menu:
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                // Close the menu after 0.3 seconds
+                setTimeout(() => {
+                document.querySelector('.menu').classList.remove('active');
+                }, 300);
+            });
+        });
+	</script>
 
 </body>
 </html>
