@@ -273,17 +273,35 @@ div.slogan-container{
 }
 
 .product{
-    width: 30%;
+    width: 40%;
+    height: 500px;
     margin: 0.5rem;
-    background-color: #220904;
+    padding-top: 50px;
+    border-radius: 0.5rem;
+    background-color:#7a7684; 
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: #220904;
 }
 
 .product .name{
+    position: absolute;
+    top: 0;
     width: 100%;
-    background-color: #000000;
+    height: 50px;
+    background-color: #220904;
+    color: #e5e0dc;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1.2rem;
+    border-radius: 0.5rem 0.5rem 0  0;
+}
+
+.info-product{
+    list-style: none;
 }
