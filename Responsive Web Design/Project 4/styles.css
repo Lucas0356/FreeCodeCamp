@@ -87,6 +87,37 @@ body {
     color: #000000;
 }
 
+#nav-bar.active{ /* for smaller screens */
+    display: block;
+    position: fixed;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    background-color: #220904;
+    color: #220904;
+}
+
+#nav-bar.active ul{
+    flex-direction: column;
+    width: 100%;
+}
+
+#nav-bar.active ul li a{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #e5e0dc;
+    padding: 20px 10px;
+    margin: inherit;
+    transition: background-color 0.3s ease;
+}
+
+#nav-bar.active ul li a:hover{
+    background-color: #e5e0dc;
+    color: #220904;
+}
+
 /* #######################################################################
 ####################################################################### */
 
@@ -121,6 +152,7 @@ div.slogan-container{
     background-image: url(images/coffe-background.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -248,7 +280,7 @@ div.slogan-container{
 /* products section styles */
 
 #products{
-    height: calc(100vh - 90px);
+    min-height: calc(100vh - 90px);
     width: 100%;
     padding: 1rem;
     display: flex;
@@ -256,6 +288,12 @@ div.slogan-container{
     align-items: center;
     justify-content: center;
 }
+
+#video{
+    max-width: 80%;
+}
+
+
 
 /* #######################################################################
 ####################################################################### */
@@ -264,34 +302,33 @@ div.slogan-container{
 
 #pricing{
     background-color: #e5e0dc;
-    height: calc(100vh - 90px);
+    min-height: calc(100vh - 90px);
     width: 100%;
     padding: 1rem;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    align-items: stretch; /* ajusta la altura de los elementos */
     justify-content: center;
+    gap: 0.5rem;
 }
 
-.product{
-    width: 40%;
-    height: 500px;
-    margin: 0.5rem;
-    padding-top: 50px;
+.product {
+    flex: 1;
+    max-height: 90%;
+    min-width: 270px;
     border-radius: 0.5rem;
-    background-color:#7a7684; 
-    position: relative;
+    border: 1px solid #220904;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     color: #220904;
 }
 
 .product .name{
-    position: absolute;
-    top: 0;
     width: 100%;
-    height: 50px;
+    height: 10%;
     background-color: #220904;
     color: #e5e0dc;
     text-align: center;
@@ -302,6 +339,96 @@ div.slogan-container{
     border-radius: 0.5rem 0.5rem 0  0;
 }
 
+.price{
+    font-size: 2rem;
+}
+
 .info-product{
-    list-style: none;
+    list-style-position: inside;
+    padding: 0.5rem;
+    text-align: left;
+    width: 80%;
+}
+
+.btn-select{
+    border-radius: 0  0 0.5rem 0.5rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 0;
+    font-weight: bold;
+    width: 100%;
+    height: 10%;
+    cursor: pointer;
+    background-color: #220904;
+    color: #e5e0dc;
+}
+
+/* ************************************************** */
+/* ************************************************** */
+/* media queries */
+
+@media (min-width:1280px) {
+    /* navbar styles */
+    .menu-button{
+        display: none;
+    }
+}
+
+/* ************************************************** */
+
+@media (max-width:1280px){
+    html{
+        font-size: 16px;
+    }
+    /* header styles */
+    #nav-bar{
+        display: none;
+    }
+    /* menu button styles */
+    .menu-button{
+        margin-left: auto;
+        padding: 10px;
+        border: 0;
+        background-color:  transparent;
+        color: #fffefe;
+        cursor: pointer;
+        display: flex;
+        align-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:800px){
+    /* slogan styles */
+    div.slogan-container{
+        background-size: content;
+        background-position: 60%;
+    }
+    .slogan{
+        margin-bottom: 50%;
+        left: 1rem;
+        padding: 0 10px;
+        width: 85%;
+        font-size: 2.3rem;
+        color: #ffffff;
+    }
+}
+
+@media (max-width:600px){
+    html{
+        font-size: 16px;
+    }
+    /* header styles */
+    #header-img{
+        margin-left: 1rem;
+        margin-right: 0.5rem;
+        width: 60px;
+    }
+    #header-title{
+        font-size: 1.5rem;
+    }
+    /* home styles */
+    .slogan{
+        font-size: 1.8rem;
+    }
 }
