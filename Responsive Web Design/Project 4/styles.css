@@ -11,7 +11,8 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 18px;
+    scroll-behavior: smooth;
 }
 
 /* #######################################################################
@@ -20,8 +21,7 @@ html {
 /* body styles */
 
 body {
-    padding-top: 90px;
-    background-color: #170502;
+    background-color: #220904;
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
@@ -77,8 +77,8 @@ body {
     font-weight: bold;
     text-decoration: none;
     color: #e5e0dc;
-    padding: 20px 15px;
-    margin: 1rem;
+    padding: 20px 10px;
+    margin: 0.5rem;
     transition: background-color 0.3s ease;
 }
 
@@ -93,6 +93,7 @@ body {
 /* main styles */
 
 main{
+    margin-top: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,10 +102,18 @@ main{
     color: #ffffff;
 }
 
+main section{
+    scroll-margin-top: 90px;
+}
+
 /* #######################################################################
 ####################################################################### */
 
-/* slogan styles */
+/* home styles */
+
+#home{
+    width: 100%;
+}
 
 div.slogan-container{
     height: calc(100vh - 90px);
@@ -120,7 +129,7 @@ div.slogan-container{
 .slogan{
     padding: 0 10px;
     width: 70%;
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-bottom: 25%;
     color: #ffffff;
 }
@@ -128,9 +137,9 @@ div.slogan-container{
 /* #######################################################################
 ####################################################################### */
 
-/* sign-up section styles */
+/* newsletter section styles */
 
-.sign-up{
+#newsletter{
     padding-top: 1rem;
     display: flex;
     flex-direction: column;
@@ -140,7 +149,7 @@ div.slogan-container{
     width: 100%;
 }
 
-.sign-up > p{
+#newsletter > p{
     padding: 1rem;
     width: 70%;
     font-weight: bold;
@@ -150,7 +159,7 @@ div.slogan-container{
     margin-bottom: 2.5rem;
 }
 
-.sign-up > form{
+#newsletter > form{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -158,29 +167,29 @@ div.slogan-container{
     width: 100%;
 }
 
-.sign-up > form input{
+#newsletter > form input{
     display: block;
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
     font-size: 1.2rem;
     border: 0;
-    background-color: #220904;
-    color: #e5e0dc;
+    background-color: #e5e0dc;
+    color: #220904;
 }
 
-.sign-up > form input[type="email"]{
+#newsletter > form input[type="email"]{
     width: 50%;
 }
 
-.sign-up > form input[type="submit"]{
+#newsletter > form input[type="submit"]{
     margin-top: 2rem;
     width: 30%;
     font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
-.sign-up > form input[type="submit"]:hover{
+#newsletter > form input[type="submit"]:hover{
     cursor: pointer;
     background-color: #e5e0dc;
     color: #220904;
@@ -189,14 +198,92 @@ div.slogan-container{
 /* #######################################################################
 ####################################################################### */
 
-/* how-it-works section styles */
+/* features section styles */
 
-#how-it-works{
-    background-color: #84472b;
+#features{
+    background-color: #e5e0dc;
+    height: calc(100vh - 90px);
     width: 100%;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.features-list{
+    padding: 1rem;
+}
+
+.features-list li{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #220904;
+    border-bottom: 1px solid #220904;
+}
+
+.features-list li:last-child{
+    border-bottom: 0;
+}
+
+.features-list li span{
+    font-size: 4.5rem;
+    margin: 2rem 2.5rem 2rem 0;
+    font-weight: bold;
+}
+
+.features-list li .info h3{
+    font-size: 1.5rem;
+}
+
+.features-list li .info p{
+    font-weight: bold;
+    display: block;
+}
+
+/* #######################################################################
+####################################################################### */
+
+/* products section styles */
+
+#products{
+    height: calc(100vh - 90px);
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* #######################################################################
+####################################################################### */
+
+/* pricing section styles */
+
+#pricing{
+    background-color: #e5e0dc;
+    height: calc(100vh - 90px);
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product{
+    width: 30%;
+    margin: 0.5rem;
+    background-color: #220904;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product .name{
+    width: 100%;
+    background-color: #000000;
+    font-size: 1.2rem;
 }
