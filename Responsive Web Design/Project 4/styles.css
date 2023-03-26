@@ -198,21 +198,26 @@ div.slogan-container{
 /* newsletter section styles */
 
 #newsletter{
+    min-height: calc(100vh - 90px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 90px);
     width: 100%;
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
-    font-size: co;
+}
+
+#newsletter > h3{
+    font-weight: bold;
+    font-size: 3rem;
+    color: #e5e0dc;
 }
 
 #newsletter > p{
     width: 80%;
-    font-weight: bold;
-    font-size: 2.5rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
     color: #e5e0dc;
 }
 
@@ -228,7 +233,6 @@ div.slogan-container{
 #newsletter > form input{
     display: block;
     padding: 10px;
-    margin: 10px;
     border-radius: 5px;
     font-size: 1.2rem;
     border: 0;
@@ -237,14 +241,12 @@ div.slogan-container{
 }
 
 #newsletter > form input[type="email"]{
-    width: 50%;
-    min-width: 250px;
+    width: 650px;
 }
 
 #newsletter > form input[type="submit"]{
     margin-top: 2rem;
-    width: 30%;
-    min-width: 250px;
+    width: 400px;
     font-weight: bold;
     transition: background-color 0.3s ease;
     padding: 10px 20px;
@@ -410,10 +412,6 @@ div.slogan-container{
     #nav-bar{
         display: none;
     }
-    /* newslette section styles */
-    #newsletter > p{
-        width: 85%;
-    }
 }
 
 @media (max-width:1023px){ /* para tablets en modo horizontal y pantallas de computadoras pequeñas */
@@ -429,7 +427,6 @@ div.slogan-container{
     /* newslette section styles */
     #newsletter > p{
         width: 100%;
-        font-size: 2rem;
     }
 }
 
@@ -455,23 +452,60 @@ div.slogan-container{
         font-size: 6rem;
         margin: 0;
     }
+    /* newslette section styles */
+    #newsletter > form input[type="email"]{
+        width: 400px;
+    }
+    #newsletter > form input[type="submit"]{
+        width: 300px;
+    }
 }
 
 @media (max-width:480px){ /*  dispositivos móviles pequeños */
+    html{
+        font-size: 16px;
+    }
     /* features section styles */
     .features-list li span{
         font-size: 4rem;
     }
-}
-
-/* @media (max-width:280px){
-    .features-list li{
-        padding: 1rem 0.2rem;
+    /* newslette section styles */
+    #newsletter > h3{
+        font-size: 2rem;
     }
-    .features-list li span{
-        font-size: 3rem;
-    }
-    .features-list li .info h3{
+    #newsletter > p{
         font-size: 1.2rem;
     }
-} */
+    #newsletter form input{
+        font-size: 1.2rem;
+    }
+    #newsletter > form input[type="email"]{
+        width: 250px;
+    }
+    #newsletter > form input[type="submit"]{
+        width: 200px;
+    }
+}
+
+@media (max-width:300px){
+    /* features section styles */
+    .features-list li span{
+        font-size: 4rem;
+    }
+    /* newslette section styles */
+    #newsletter > h3{
+        font-size: 1.5rem;
+    }
+    #newsletter > p{
+        font-size: 1rem;
+    }
+    #newsletter form input{
+        font-size: 1rem;
+    }
+    #newsletter > form input[type="email"]{
+        width: 250px;
+    }
+    #newsletter > form input[type="submit"]{
+        width: 200px;
+    }
+}
