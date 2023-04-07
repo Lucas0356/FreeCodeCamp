@@ -183,12 +183,12 @@ div.slogan-container{
 }
 
 .slogan{
-    max-width: 100%; /* Asegura que el h2 no se extienda más allá del ancho del elemento contenedor */
+    max-width: 100%;
     position: absolute;
-    top: 5%;
+    top: 3%;
     padding: 0 10px;
     width: 70%;
-    font-size: 5vw;
+    font-size: 4vw;
     color: #ffffff;
 }
 
@@ -465,7 +465,7 @@ div.slogan-container{
         background-position: 60%;
     }
     .slogan{
-        font-size: 8vw;
+        font-size: 5vw;
         width: 95%;
     }
     /* newsletter section styles */
@@ -487,6 +487,10 @@ div.slogan-container{
     }
     #header-title{
         font-size: 1.5rem;
+    }
+    /* slogan styles */
+    .slogan{
+        font-size: 6.5vw;
     }
     /* features section styles */
     .features-list li{
@@ -515,13 +519,17 @@ div.slogan-container{
     html{
         font-size: 16px;
     }
+    /* slogan styles */
+    .slogan{
+        font-size: 7.5vw;
+    }
     /* features section styles */
     .features-list li span{
         font-size: 4rem;
     }
     /* newslette section styles */
     #newsletter > h3{
-        font-size: 12vw;
+        font-size: 10vw;
     }
     #newsletter > p{
         font-size: 1.2rem;
