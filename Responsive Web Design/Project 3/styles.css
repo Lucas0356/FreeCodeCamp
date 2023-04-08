@@ -242,6 +242,9 @@ code .value{
         align-content: center;
         align-items: center;
     }
+    .button-menu span{
+        font-size: 2rem;
+    }
     /* main styles */
     #main-doc{
         margin-left: inherit;
