@@ -1,12 +1,12 @@
 /* import font  */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&family=Poppins:wght@400;700&display=swap');
 
 /* General styles */
 
 *{
     box-sizing: border-box;
     margin: 0;
-    border: 1px solid black;
+    padding: 0;
 }
 
 html{
@@ -16,7 +16,7 @@ html{
 
 /* header styles */
 
-#navbar{
+header{
     display: flex;
     align-items: center;
     font-size: 1.8rem;
@@ -25,25 +25,32 @@ html{
     top: 0;
     left: 0;
     background-color: #412c4f;
+    box-shadow: 0 2px 0 #140e19;
 }
 
-#navbar > .brand p{
-    color: #fffa93;
+.brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 2rem;
     font-size: 3rem;
+    color: #fffa93;
     font-weight: 700;
 }
 
-#navbar > .brand p::first-letter{
+.brand p::first-letter{
     color: #e86676;
     margin-right: 2px;
 }
 
-#navbar ul.menu{
+#navbar{
     margin-left: auto;
+    margin-right: 2rem;
+}
+
+#navbar ul.menu{
     display: flex;
     list-style: none;
-    margin-right: 2rem;
 }
 
 #navbar ul.menu a{
@@ -57,6 +64,65 @@ html{
     background-color: #fffa93;
     color: #412c4f;
     transition: ease-in-out 250ms;
+}
+
+/* menu movile styles */
+
+#navbar.active{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #220904;
+}
+
+#navbar.active ul.menu{
+    margin-top: 4rem;
+    flex-direction: column;
+}
+
+#navbar.active ul.menu a{
+    width: 100vw;
+}
+
+.menu-button{
+    display: block;
+    margin: 0 2rem 0 auto;
+    background-color: transparent;
+    border: 0;
+    color: #fffa93;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-button > span{
+    margin: auto 0;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.close-button{
+    display: none;
+}
+
+#navbar.active .close-button{
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: 0;
+    color: #fffa93;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar.active .close-button > span{
+    margin: auto 0;
+    font-size: 2.5rem;
+    cursor: pointer;
 }
 
 /* body styles */
@@ -82,6 +148,61 @@ body{
 }
 
 #welcome-section > .presentation h2{
+    font-family: 'Poppins', sans-serif;
     font-size: 4vw;
-    color: #000000;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ************************************************** */
+/* ************************************************** */
+/* MEDIA QUERIES */
+
+@media (min-width:1200px) {
+    /* navbar styles */
+    .menu-button{
+        display: none;
+    }
+}
+
+/* ************************************************** */
+
+@media (max-width:1199px){
+    /* navbar styles */
+    #navbar{
+        display: none;
+    }
+}
+
+/* ************************************************** */
+
+@media (max-width:1023px){
+
+}
+
+/* ************************************************** */
+
+@media (max-width:767px){
+
+}
+
+/* ************************************************** */
+
+@media (max-width:480px){
+
+}
+
+/* ************************************************** */
+
+@media (max-width:300px){
+
 }
