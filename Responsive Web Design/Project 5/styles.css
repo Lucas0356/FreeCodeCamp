@@ -1,0 +1,87 @@
+/* import font  */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap');
+
+/* General styles */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid black;
+}
+
+html{
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* header styles */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #412c4f;
+}
+
+#navbar > .brand p{
+    color: #fffa93;
+    margin-left: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#navbar > .brand p::first-letter{
+    color: #e86676;
+    margin-right: 2px;
+}
+
+#navbar ul.menu{
+    margin-left: auto;
+    display: flex;
+    list-style: none;
+    margin-right: 2rem;
+}
+
+#navbar ul.menu a{
+    text-decoration: none;
+    display: block;
+    color: #fffa93;
+    padding: 1rem;
+}
+
+#navbar ul.menu a:hover{
+    background-color: #fffa93;
+    color: #412c4f;
+    transition: ease-in-out 250ms;
+}
+
+/* body styles */
+
+body{
+    margin-top: 80px;
+    background-color: #412c4f;
+}
+
+/* welcome-section styles */
+
+#welcome-section{
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#welcome-section > .presentation h1{
+    font-size: 7vw;
+    color: #fffa93;
+}
+
+#welcome-section > .presentation h2{
+    font-size: 4vw;
+    color: #000000;
+}
