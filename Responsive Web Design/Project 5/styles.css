@@ -138,7 +138,7 @@ body section{
     scroll-margin-top: 75px;
 }
 
-/* welcome-section styles */
+/* welcome section styles */
 
 #welcome-section{
     height: calc(100vh - 75px);
@@ -158,6 +158,20 @@ body section{
     font-size: 4vw;
     color: #c2e1e5;
 }
+
+/* about me section styles */
+
+#aboutme-section{
+    height: calc(100vh - 75px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #c2e1e5;
+}
+
+
 
 /* projects section styles */
 
