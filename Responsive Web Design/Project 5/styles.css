@@ -35,7 +35,7 @@ header{
     align-items: center;
     justify-content: center;
     margin-left: 2rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #68bae2;
     font-weight: 700;
 }
@@ -171,14 +171,14 @@ body section{
 }
 
 .project-tile{
-    min-height: 100%;
-    width: calc(100vw / 3);
+    max-width: calc(80vw / 4);
     min-width: 250px;
     background-color: #19324a;
-    border: 3px solid #055d9c;
+    border: 5px solid #055d9c;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
     margin: 10px;
     text-align: center;
-    border-radius: 14px 14px 10px 10px;
+    border-radius: 15px 15px 10px 10px;
 }
 
 .project-image-container{
@@ -189,7 +189,6 @@ body section{
     width: 100%;
     margin-bottom: 10px;
     border-radius: 10px 10px 0 0;
-    object-fit: cover;
 }
 
 .project-tile h3 {
