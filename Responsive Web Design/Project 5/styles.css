@@ -92,7 +92,7 @@ header{
     margin: 0 2rem 0 auto;
     background-color: transparent;
     border: 0;
-    color: #fffa93;
+    color: #bfd6ec;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -162,22 +162,66 @@ body section{
 /* projects section styles */
 
 #projects-section{
+    background-color: #003161;
     min-height: calc(100vh - 75px);
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
 .project-tile{
-    height: calc(100vh / 2 - 2rem);
-    width: calc(100vw / 3)
+    min-height: 100%;
+    width: calc(100vw / 3);
+    min-width: 250px;
+    background-color: #19324a;
+    border: 3px solid #055d9c;
+    margin: 10px;
+    text-align: center;
+    border-radius: 14px 14px 10px 10px;
 }
 
-.project-image {
-    height: calc(100% - 6.8rem);
+.project-image-container{
     width: 100%;
+}
+
+.project-tile img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px 10px 0 0;
     object-fit: cover;
 }
+
+.project-tile h3 {
+    color: #d3edff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem;
+}
+
+.technologies img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+.buttons a {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 15px;
+    background-color: #075893;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.buttons a:hover {
+    background-color: #0056b3;
+}
+
 
 
 
