@@ -1,6 +1,8 @@
 /* import font  */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&family=Poppins:wght@400;700&display=swap');
 
+
+/* ----------------------------------------------------- */
 /* General styles */
 
 *{
@@ -15,6 +17,9 @@ html{
     scroll-behavior: smooth;
 }
 
+/* ----------------------------------------------------- */
+
+/* ----------------------------------------------------- */
 /* header styles */
 
 header{
@@ -67,6 +72,9 @@ header{
     color: #003161;
 }
 
+/* ----------------------------------------------------- */
+
+/* ----------------------------------------------------- */
 /* menu movile styles */
 
 #navbar.active{
@@ -127,6 +135,9 @@ header{
     cursor: pointer;
 }
 
+/* ----------------------------------------------------- */
+
+/* ----------------------------------------------------- */
 /* body styles */
 
 body{
@@ -138,6 +149,9 @@ body section{
     scroll-margin-top: 75px;
 }
 
+/* ----------------------------------------------------- */
+
+/* ----------------------------------------------------- */
 /* welcome section styles */
 
 #welcome-section{
@@ -159,6 +173,9 @@ body section{
     color: #c2e1e5;
 }
 
+/* ----------------------------------------------------- */
+
+/* ----------------------------------------------------- */
 /* about me section styles */
 
 #aboutme-section{
@@ -171,8 +188,9 @@ body section{
     background-color: #c2e1e5;
 }
 
+/* ----------------------------------------------------- */
 
-
+/* ----------------------------------------------------- */
 /* projects section styles */
 
 #projects-section{
@@ -187,9 +205,9 @@ body section{
 #projects-section h3.section-title{
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 4vw;
+    font-size: 3.5vw;
     color: #c2e1e5;
-    margin-bottom: 15px;
+    padding: 2% 0;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -197,12 +215,12 @@ body section{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .project-tile{
-    max-width: calc(80vw / 4);
-    min-width: 250px;
+    max-width: calc(90vw / 4);
+    min-width: 300px;
     background-color: #19324a;
     border: 5px solid #04437a;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
@@ -217,7 +235,6 @@ body section{
 
 .project-tile img {
     width: 100%;
-    margin-bottom: 10px;
     border-radius: 10px 10px 0 0;
 }
 
@@ -225,19 +242,22 @@ body section{
     color: #d3edff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     font-size: 1.5rem;
+    margin-top: 10px;
 }
 
 .buttons {
     margin-top: 15px;
+    justify-content: space-around;
 }
 
 .buttons a {
     display: inline-block;
-    margin: 5px;
-    padding: 8px 15px;
+    margin: 5%;
+    padding: 8px 10px;
     background-color: #075893;
     color: #fff;
     text-decoration: none;
+    font-size: 120%;
     border-radius: 5px;
 }
 
@@ -245,36 +265,44 @@ body section{
     background-color: #0056b3;
 }
 
+/* ----------------------------------------------------- */
 
 
 
+/* ========================================================================================================================= */
+/* ========================================================================================================================= */
+/* ========================================================================================================================= */
 
 
-
-
-
-
-
-
-
-/* ************************************************** */
 /* ************************************************** */
 /* MEDIA QUERIES */
 
 @media (min-width:1200px) {
-    /* navbar styles */
+    
+    /* Navbar ===================================== */
+    
+    /* Navbar movile off -------------------------- */
     .menu-button{
         display: none;
     }
+    /* ------------------------------------------- */
+
+    /* =========================================== */
 }
 
 /* ************************************************** */
 
 @media (max-width:1199px){
-    /* navbar styles */
+
+    /* Navbar ==================================== */
+    
+    /* Navbar off -------------------------------- */
     #navbar{
         display: none;
     }
+    /* ------------------------------------------- */
+
+    /* =========================================== */
 }
 
 /* ************************************************** */
@@ -285,14 +313,26 @@ body section{
 
 /* ************************************************** */
 
-@media (max-width:767px){
+@media (max-width:767px) {
+    
+    /* Projects-section ========================== */
+    
+    /* H3 title font-size for small screens ------ */
+    #projects-section h3.section-title {
+        font-size: 7vw;
+    }
+    /* ------------------------------------------- */
 
+    /* =========================================== */
 }
 
 /* ************************************************** */
 
 @media (max-width:480px){
-    /* header styles */
+
+    /* Header styles ============================= */
+
+    /* Navbar styles ----------------------------- */
     .brand{
         margin-left: 1rem;
         font-size: 2rem;
@@ -314,6 +354,41 @@ body section{
         padding: 0.8rem;
         font-size: 1.5rem;
     }
+    /* ------------------------------------------- */
+
+    /* =========================================== */
+
+    /* Welcome-section =========================== */
+
+    /* Text size for small screens --------------- */
+    #welcome-section > .presentation h1{
+        font-size: 10vw;
+    }
+    #welcome-section > .presentation h2{
+        font-size: 8vw;
+    }
+    /* ------------------------------------------- */
+
+    /* =========================================== */
+
+    /* Projects-section ========================== */
+    
+    /* Project card size for small screens ------- */
+    .project-tile{
+        max-width: 90vw;
+        min-width: 85vw;
+    }
+    .project-tile h3 {
+        font-size: 8vw;
+        margin-top: 5px;
+    }
+    .project-tile .buttons a {
+        font-size: 5vw;
+        margin: 3%;
+    }
+    /* ------------------------------------------- */
+
+    /* =========================================== */
 }
 
 /* ************************************************** */
