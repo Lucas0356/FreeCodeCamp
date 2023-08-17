@@ -205,7 +205,7 @@ body section{
 #projects-section h3.section-title{
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 3.5vw;
+    font-size: max(2.5rem, 3.5vw);
     color: #c2e1e5;
     padding: 2% 0;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
@@ -267,6 +267,53 @@ body section{
 
 /* ----------------------------------------------------- */
 
+/* Footer / contact section styles */
+
+/* Footer styles*/
+#footer-section {
+    background-color: #c2e1e5;
+    color: #003161;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#footer-section h3 {
+    font-size: max(2rem, 3vw);
+    margin-bottom: 20px;
+}
+
+#footer-section ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#footer-section li {
+    margin: 0 20px;
+    font-size: 1.2rem;
+}
+
+#footer-section .container-contact-icon:hover {
+    color: #ffc107;
+}
+
+#footer-section i.contact-icon {
+    margin-top: 10px;
+    background-color: #003161;
+    color: #c2e1e5;
+    border-radius: 100%;
+    padding: 10px 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#footer-section i.contact-icon:hover {
+    color: #fff;
+}
+
+
+/* ----------------------------------------------------- */
+
 
 
 /* ========================================================================================================================= */
@@ -319,7 +366,8 @@ body section{
     
     /* H3 title font-size for small screens ------ */
     #projects-section h3.section-title {
-        font-size: 7vw;
+        font-size: max(1.5rem, 7vw);
+        padding: 5% 0;
     }
     /* ------------------------------------------- */
 

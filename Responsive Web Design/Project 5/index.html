@@ -125,12 +125,31 @@
         </div>
     </section>
 
-    <section id="contact-section">
-        <h3>My accounts:</h3>
+    <footer id="footer-section">
+        <h3>Contact me</h3>
         <ul>
-            <li><a id="profile-link" href="https://github.com/Lucas0356" target="_blank">Github</a></li>
+            <li>
+                <p>GitHub</p>
+                <a id="github-link" href="https://github.com/Lucas0356" target="_blank" class="container-contact-icon">
+                    <i class="fa-brands fa-github contact-icon"></i>
+                </a>
+            </li>
+            <li>
+                <p>LinkedIn</p>
+                <a id="linkedin-link" href="https://www.linkedin.com" target="_blank" class="container-contact-icon">
+                    <i class="fa-brands fa-linkedin-in contact-icon"></i>
+                </a>
+            </li>
+            <li>
+                <p>Email</p>
+                <span id="email-link" class="container-contact-icon">
+                    <i class="fa fa-envelope contact-icon"></i>
+                </span>
+            </li>
+            
         </ul>
-    </section>
+    </footer>
+    
 
     <script>
         // JavaScript
@@ -175,6 +194,22 @@
 
         // Adds a listener for the resize event
         window.addEventListener('resize', updateNavbar);
+
+
+
+        // Event 2 - Email
+
+        // Wait for the document to be fully loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the email link element
+            const emailLink = document.getElementById('email-link');
+
+            // Add a click event listener to the email link
+            emailLink.addEventListener('click', function () {
+                // Here you can open a contact form or display a confirmation message
+                alert("If you'd like to contact me via email, please use lucasmoltedo03@gmail.com");
+            });
+        });
 
     </script>
 </body>
