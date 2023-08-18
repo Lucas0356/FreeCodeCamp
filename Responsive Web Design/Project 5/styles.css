@@ -82,8 +82,8 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #220904;
-    transition: transform(0,3s);
+    background-color: #055d9c;
+    box-shadow: 0 2px 0 #033d66;
 }
 
 #navbar.active ul.menu{
@@ -112,6 +112,11 @@ header{
     cursor: pointer;
 }
 
+.menu-button > span:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
 .close-button{
     display: none;
 }
@@ -123,7 +128,7 @@ header{
     right: 31px;
     background-color: transparent;
     border: 0;
-    color: #fffa93;
+    color: #c2e1e5;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,6 +138,11 @@ header{
     margin: auto 0;
     font-size: 2.5rem;
     cursor: pointer;
+}
+
+#navbar.active .close-button > span:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
 }
 
 /* ----------------------------------------------------- */
